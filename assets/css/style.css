@@ -13,12 +13,20 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: 80%;
+  background-attachment: fixed;
 }
 header h1 {
   font-weight: bold;
   font-size: 36px;
   color: #fce138;
   margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 header a {
   text-decoration: none;
@@ -38,6 +46,7 @@ header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 footer {
   background: #fce138;
@@ -65,11 +74,12 @@ section {
 .hero {
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 80%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start
+  background-attachment: fixed;
 }
 .hero-form {
   border: solid 3px #024e76;
@@ -78,6 +88,8 @@ section {
   color: #024e76;
   width: 40%;
   margin: 3.5%;
+  box-shadow: 0 0 10px rgba(252,225,56,0.8);
+  border-radius: 15px;
 }
 .hero-form h3 {
   font-size: 24px;
@@ -94,6 +106,7 @@ section {
   color: #024e76;
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 10px;
 }
 .hero-form label {
   margin: 0 5px;
@@ -104,6 +117,7 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+  border-radius: 10px;
 }
 .intro p {
   line-height: 1.7;
@@ -215,6 +229,7 @@ section {
   font-style: italic;
   font-size: 55px;
   color: #fce138;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .step-text h4 {
   font-size: 26px;
@@ -265,6 +280,7 @@ color: #024e76;
 width: 100%;
 margin-bottom: 15px;
 margin-top: 5px;
+border-radius: 10px;
 }
 .contact-form button {
 width: 100%;
@@ -274,12 +290,14 @@ color: #024e76;
 text-align: center;
 padding: 15px 0;
 font-size: 16px;
+border-radius: 10px;
 }
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative
   }
 
   header h1 {
@@ -377,4 +395,8 @@ font-size: 16px;
   .contact-form {
     order: 3;
   }
+}
+.some-class {
+  text-shadow: 5px 10px 15px black;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.25);
 }
