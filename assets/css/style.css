@@ -154,20 +154,12 @@ section {
   flex: 1;
 }
 .trainer img {
-  width: 35%;
-  float: left;
+  width: 100%;
 }
 .trainer-bio {
-  padding: 35px;
-  float: left;
+  padding: 25px;
   width: 65%;
   line-height: 1.3;
-}
-.text-left {
-  text-align: left;
-}
-.text-right {
-  text-align: right;
 }
 .flex-row {
   display: flex;
